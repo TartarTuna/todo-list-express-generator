@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "6d5deb8e-5986-484e-be87-5107047df7cf",
+		"name": "todo-list-express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all todo list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-beyond-03055.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"afternoon-beyond-03055",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new todo item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tags\": [\"心情\", \"murmur\"],\r\n    \"type\": \"person\",\r\n    \"name\": \"Ruta3\",\r\n    \"content\": \"好想睡覺\",\r\n    \"likes\": 1000,\r\n    \"comments\": 26\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://afternoon-beyond-03055.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"afternoon-beyond-03055",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all todo item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-beyond-03055.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"afternoon-beyond-03055",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "specific todo item",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tags\": [\"該該叫\", \"murmur\"],\r\n    \"type\": \"person\",\r\n    \"name\": \"Ruta11\",\r\n    \"content\": \"測試 patch\",\r\n    \"likes\": 1000,\r\n    \"comments\": 26\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://afternoon-beyond-03055.herokuapp.com/posts/626968e15ecd7fcdb2699c49",
+					"protocol": "https",
+					"host": [
+						"afternoon-beyond-03055",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"626968e15ecd7fcdb2699c49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "specific todo item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://afternoon-beyond-03055.herokuapp.com/posts/6269695a5ecd7fcdb2699c59",
+					"protocol": "https",
+					"host": [
+						"afternoon-beyond-03055",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6269695a5ecd7fcdb2699c59"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
