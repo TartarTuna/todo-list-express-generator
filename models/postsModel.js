@@ -2,19 +2,10 @@ const mongoose = require('mongoose')
 
 const postSchema = new mongoose.Schema(
   {
-    tags: [
-      {
-        type: String,
-        required: [true, '標籤不能為空字串']
-      },
-    ],
-    type: {
-      type: String,
-      enum: ['group', 'person']
-    },
-    name: {
-      type: String,
-      required: [true, "名稱為必填"]
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: "user",
+      required: [true, 'user ID 未填寫']
     },
     content: {
       type: String,
